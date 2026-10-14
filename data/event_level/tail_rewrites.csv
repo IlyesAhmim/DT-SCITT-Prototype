@@ -1,0 +1,16 @@
+scenario,mode,pending_at_end,rewritten,detected
+nominal,policy-driven,4,4,False
+nominal,forced-sync,0,0,False
+nominal,forced-async,43,43,False
+mixed,policy-driven,5,5,False
+mixed,forced-sync,0,0,False
+mixed,forced-async,57,57,False
+management_heavy,policy-driven,0,0,False
+management_heavy,forced-sync,0,0,False
+management_heavy,forced-async,4,4,False
+lifecycle_instability,policy-driven,0,0,False
+lifecycle_instability,forced-sync,0,0,False
+lifecycle_instability,forced-async,16,16,False
+high_risk,policy-driven,0,0,False
+high_risk,forced-sync,0,0,False
+high_risk,forced-async,50,50,False

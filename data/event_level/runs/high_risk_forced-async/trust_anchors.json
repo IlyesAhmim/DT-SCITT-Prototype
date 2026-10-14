@@ -1,0 +1,45 @@
+{
+ "keys": [
+  {
+   "key_id": "demo-twin-001/k1",
+   "owner": "operator-of-demo-twin-001",
+   "public_key": "be2d2cde37bfab4cc1029dc4d3dba383bf2e8526c4fa5b21617d74b5474a3056",
+   "valid_from_ns": 1791387813996845711,
+   "revoked_at_ns": 1791387814137358283
+  },
+  {
+   "key_id": "demo-twin-001-002/k1",
+   "owner": "operator-of-demo-twin-001-002",
+   "public_key": "e8f61920625a2adc0ea5a67f494d6f4252e3aa2c0d2c8e2c904e04e8c9f4b7b7",
+   "valid_from_ns": 1791387813997945933,
+   "revoked_at_ns": 1791387814137690238
+  },
+  {
+   "key_id": "demo-twin-001/k2",
+   "owner": "operator-of-demo-twin-001",
+   "public_key": "867354179066ca9e999553dbe65a69ecabb97f858c9495aed12029f8dbc828bd",
+   "valid_from_ns": 1791387814137358283,
+   "revoked_at_ns": null
+  },
+  {
+   "key_id": "demo-twin-001-002/k2",
+   "owner": "operator-of-demo-twin-001-002",
+   "public_key": "37d7116ade7a69690cd5c6d96d14350636abb59aec6150d24f84b2475d45f7d7",
+   "valid_from_ns": 1791387814137690238,
+   "revoked_at_ns": null
+  }
+ ],
+ "time_stamp_key": "b63e7016082239eaa5f26da7f2a78c2d78da8774d453a67a310b8f67a53fdd0f",
+ "member_keys": {
+  "member-1": "954151be4413752dad82f7ed876336163cc59457039700ba241995fbff1a17c1",
+  "member-2": "eea95297a6d407b6e03830f1b5264df6c652af45d1a21eb6d92c80fa804d07d2",
+  "member-3": "f9157ad15b171a39fbc24a5bdae546bf50ed21e12f1623db0e26b36f827f6416",
+  "member-4": "d6bddc09d65c0e18d5d46887c8c9453f2e5b4e325f02d6987f055207f109d52b"
+ },
+ "quorum": 3,
+ "log_id": "dt-evidence-log",
+ "initial_dtd": {
+  "demo-twin-001": 1,
+  "demo-twin-001-002": 1
+ }
+}

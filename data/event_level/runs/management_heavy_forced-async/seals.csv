@@ -1,0 +1,16 @@
+size,trigger,queued_anchors,quorum_us,event_index
+64,async-bound,64,724.551,74
+128,async-bound,64,620.644,151
+192,async-bound,64,708.392,226
+256,async-bound,64,679.011,295
+320,async-bound,64,720.084,361
+384,async-bound,64,609.236,428
+448,async-bound,64,869.325,499
+512,async-bound,64,652.881,569
+576,async-bound,64,677.455,642
+640,async-bound,64,663.73,715
+704,async-bound,64,616.254,783
+768,async-bound,64,751.282,858
+832,async-bound,64,590.972,925
+896,async-bound,64,684.875,994
+900,end,4,689.607,1000

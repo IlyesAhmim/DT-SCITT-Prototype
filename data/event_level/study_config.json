@@ -1,0 +1,37 @@
+{
+  "study": {
+    "scenarios": [
+      "nominal",
+      "mixed",
+      "management_heavy",
+      "lifecycle_instability",
+      "high_risk"
+    ],
+    "modes": [
+      "policy-driven",
+      "forced-sync",
+      "forced-async"
+    ],
+    "twins": 2,
+    "events_per_twin": 500,
+    "seed": 42,
+    "reference_events_per_twin": 20,
+    "malformed_probability": 0.01,
+    "members": 4,
+    "quorum": 3,
+    "async_max_batch": 64,
+    "async_max_age_events": 300,
+    "rotate_key_at_event": null,
+    "faults_per_cell": 10,
+    "fault_seed": 7,
+    "log_id": "dt-evidence-log"
+  },
+  "generated_at": "2026-10-07T15:43:35.003786+00:00",
+  "elapsed_s": 113.9,
+  "environment": {
+    "python": "3.14.4",
+    "cryptography": "50.0.2",
+    "platform": "Linux-7.0.0-34-generic-x86_64-inconnu-with-glibc2.43",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13950HX"
+  }
+}

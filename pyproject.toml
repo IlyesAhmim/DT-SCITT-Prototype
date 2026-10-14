@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dt-trust-checkpoints"
+version = "0.1.0"
+description = "Local research prototype and reproducibility artifacts for Digital Twin evidence checkpointing."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Research Prototype Authors" }
+]
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "cryptography>=41"
+]
+
+[project.scripts]
+dt-trust-checkpoints = "dt_trust_checkpoints.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

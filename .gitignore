@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+outputs/
+checks/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# The reference dataset in data/event_level/ and the example vector are tracked.

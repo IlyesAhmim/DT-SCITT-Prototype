@@ -1,0 +1,155 @@
+{
+  "proof": {
+    "default_proof_type": "canonical_hash",
+    "hash_algorithm": "sha256",
+    "canonicalization_version": "v0.1",
+    "include_signatures": true,
+    "default_signer_id": "local-demo-signer",
+    "signature_scheme": "local-mock-sha256-v1"
+  },
+  "checkpoint_policy": {
+    "default_mode": "async",
+    "critical_event_mode": "sync",
+    "anchor_only_critical_events": true,
+    "max_async_delay_seconds": 300,
+    "thresholds": {
+      "criticality_sync_threshold": 0.75,
+      "fidelity_sync_threshold": 0.5
+    },
+    "rules": {
+      "reject_malformed_events": true,
+      "event_type_default_modes": {
+        "dtd_update": "sync",
+        "dts_transition": "sync",
+        "af_validated_output": "async",
+        "management_action": "async",
+        "lifecycle_event": "async"
+      },
+      "lifecycle_sync_claims": [
+        "synchronized",
+        "out_of_sync"
+      ]
+    }
+  },
+  "simulation": {
+    "default_twin_id": "demo-twin-001",
+    "event_count": 10,
+    "random_seed": 42,
+    "critical_event_probability": 0.2,
+    "default_twin_count": 2,
+    "events_per_twin": 12,
+    "default_scenario": "mixed",
+    "event_type_probabilities": {
+      "dtd_update": 0.08,
+      "dts_transition": 0.18,
+      "af_validated_output": 0.32,
+      "management_action": 0.18,
+      "lifecycle_event": 0.14,
+      "sensor_reading": 0.10
+    },
+    "criticality_ranges": {
+      "low": [0.05, 0.45],
+      "high": [0.75, 0.98]
+    },
+    "fidelity_ranges": {
+      "nominal": [0.82, 0.98],
+      "unstable": [0.35, 0.78]
+    },
+    "scenario_presets": {
+      "nominal": {
+        "critical_probability": 0.12,
+        "sensitive_management_probability": 0.10,
+        "out_of_sync_probability": 0.05,
+        "fidelity_drift": 0.02,
+        "event_type_probabilities": {
+          "dtd_update": 0.08,
+          "dts_transition": 0.12,
+          "af_validated_output": 0.36,
+          "management_action": 0.12,
+          "lifecycle_event": 0.12,
+          "sensor_reading": 0.20
+        }
+      },
+      "high_risk": {
+        "critical_probability": 0.68,
+        "sensitive_management_probability": 0.35,
+        "out_of_sync_probability": 0.22,
+        "fidelity_drift": -0.04,
+        "event_type_probabilities": {
+          "dtd_update": 0.08,
+          "dts_transition": 0.26,
+          "af_validated_output": 0.36,
+          "management_action": 0.12,
+          "lifecycle_event": 0.13,
+          "sensor_reading": 0.05
+        }
+      },
+      "management_heavy": {
+        "critical_probability": 0.25,
+        "sensitive_management_probability": 0.55,
+        "out_of_sync_probability": 0.10,
+        "fidelity_drift": 0.0,
+        "event_type_probabilities": {
+          "dtd_update": 0.06,
+          "dts_transition": 0.10,
+          "af_validated_output": 0.16,
+          "management_action": 0.48,
+          "lifecycle_event": 0.10,
+          "sensor_reading": 0.10
+        }
+      },
+      "lifecycle_instability": {
+        "critical_probability": 0.35,
+        "sensitive_management_probability": 0.25,
+        "out_of_sync_probability": 0.55,
+        "fidelity_drift": -0.08,
+        "event_type_probabilities": {
+          "dtd_update": 0.05,
+          "dts_transition": 0.14,
+          "af_validated_output": 0.18,
+          "management_action": 0.10,
+          "lifecycle_event": 0.43,
+          "sensor_reading": 0.10
+        }
+      },
+      "mixed": {
+        "critical_probability": 0.30,
+        "sensitive_management_probability": 0.25,
+        "out_of_sync_probability": 0.18,
+        "fidelity_drift": -0.01
+      }
+    }
+  },
+  "verification": {
+    "synchronized_fidelity_threshold": 0.8,
+    "verification_strict_mode": true
+  },
+  "experiments": {
+    "output_dir": "outputs/experiments",
+    "default_modes": [
+      "policy-driven",
+      "forced-async",
+      "forced-sync"
+    ],
+    "default_scenarios": [
+      "nominal",
+      "high_risk",
+      "management_heavy",
+      "lifecycle_instability",
+      "mixed"
+    ],
+    "default_twins": 2,
+    "default_events_per_twin": 20,
+    "default_seed": 42,
+    "with_verification": false
+  },
+  "storage": {
+    "outputs_dir": "outputs",
+    "experiments_dir": "experiments",
+    "evidence_dir": "outputs/evidence",
+    "offchain_evidence_dir": "outputs/evidence",
+    "chain_state_dir": "outputs/chain_state",
+    "anchor_dir": "outputs/anchors",
+    "anchor_records_file": "outputs/anchor_records.jsonl"
+  }
+}

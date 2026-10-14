@@ -1,0 +1,325 @@
+{
+  "format": "local-prototype-json-v1",
+  "scope": "Frozen prefix of saved nominal policy-driven run; not a SCITT, JCS or ETSI conformance vector",
+  "source_run": "data/event_level/runs/nominal_policy-driven",
+  "timestamp_scope": "Source-record digest, not full signed envelope",
+  "trust_anchors": {
+    "keys": [
+      {
+        "key_id": "demo-twin-001/k1",
+        "owner": "operator-of-demo-twin-001",
+        "public_key": "96007abf37c0f0328e87d23577c07663199bfd7c24584d33b354168ccd07c5a1",
+        "valid_from_ns": 1791387701023604035,
+        "revoked_at_ns": 1791387701335710614
+      },
+      {
+        "key_id": "demo-twin-001-002/k1",
+        "owner": "operator-of-demo-twin-001-002",
+        "public_key": "3e0081091d5425ebe13abdfb8b825d5121ba439c5046738449df2c9bd1c79ba8",
+        "valid_from_ns": 1791387701025944657,
+        "revoked_at_ns": 1791387701337157555
+      },
+      {
+        "key_id": "demo-twin-001/k2",
+        "owner": "operator-of-demo-twin-001",
+        "public_key": "54a6694a6afb9aa3c93ba38940aa685bb5de8bb87e661a5915202b5d553f442a",
+        "valid_from_ns": 1791387701335710614,
+        "revoked_at_ns": null
+      },
+      {
+        "key_id": "demo-twin-001-002/k2",
+        "owner": "operator-of-demo-twin-001-002",
+        "public_key": "106cda1978034027d41e4cee577a274979ed78a201f900f9d5021e18a32b826c",
+        "valid_from_ns": 1791387701337157555,
+        "revoked_at_ns": null
+      }
+    ],
+    "time_stamp_key": "04a566f5cb2185a0eb1b431bc8c196f54272ad1d497985c5096a9475dd55a2eb",
+    "member_keys": {
+      "member-1": "7a7dd3fe00550d72bf944751020ca7e05af6483e4c4a54f2fe5a281b8b570619",
+      "member-2": "c37bead4203e95f2c3151a0b7e3a7043b297db46c1f863fb50a7cfbf05b4c6c1",
+      "member-3": "9e97aa9011db1845403ddd179c611edf2b199aa04e696b8c0682c467790b44c3",
+      "member-4": "cb323a79eb24b0444d9a4c7e8c4d06b5c0e831577261e97264620443bdc8dd1a"
+    },
+    "quorum": 3,
+    "log_id": "dt-evidence-log",
+    "initial_dtd": {
+      "demo-twin-001": 1,
+      "demo-twin-001-002": 1
+    }
+  },
+  "world": {
+    "chains": {
+      "demo-twin-001-002": [
+        {
+          "proof_object": {
+            "cat": "dts_transition",
+            "dt": "demo-twin-001-002",
+            "dtd": 1,
+            "kid": "demo-twin-001-002/k1",
+            "pd": "9c195b5735bf38809837a6b45cc17ac1757e69e4e9b07ea67124087f583aefa3",
+            "phase": "operation",
+            "prev": null,
+            "rule": "event.dts_transition.critical_sync",
+            "salt": "7b300aef7c86760cd70dbb191e195425",
+            "seq": 1,
+            "sig": "61c5cf3e23507284b411e406ddcbe901d1a7402ba9b8eff04308214d9218c2268bc6fff2e35e0884db3019a31d389abc274e65de8ec22912c1c2d46645000007",
+            "tst": {
+              "d": "9c195b5735bf38809837a6b45cc17ac1757e69e4e9b07ea67124087f583aefa3",
+              "serial": 2,
+              "sig": "65c69ad2e585956fb8cd46358711d21c525deae96a01b2a00879811eb5d2a2f96338d9095207e1e79e1828d0319ba1b05d25d2ee2b1103f64773ba62c44a160f",
+              "t": 1791387701026106423,
+              "tss": "local-tss"
+            },
+            "v": 1
+          },
+          "record": "{\"event_id\":\"sim-nominal-demo-twin-001-002-00001\",\"event_type\":\"dts_transition\",\"lifecycle_state\":\"operation\",\"metadata\":{\"critical_transition\":false,\"criticality\":0.219,\"dtd_version\":1,\"fidelity_score\":0.845,\"scenario_name\":\"nominal\",\"state_label\":\"safe_shutdown\",\"state_version\":1},\"observed_at\":\"2026-01-01T00:00:01+00:00\",\"payload\":{\"from\":\"idle\",\"state\":{\"property_00\":82.762,\"property_01\":38.121,\"property_02\":79.345,\"property_03\":52.552,\"property_04\":82.993,\"property_05\":71.591,\"property_06\":10.449,\"property_07\":61.044,\"property_08\":74.459,\"property_09\":94.929,\"property_10\":51.657,\"property_11\":26.12,\"property_12\":99.559,\"property_13\":9.803,\"property_14\":45.617,\"property_15\":19.749,\"property_16\":18.913,\"property_17\":46.674,\"property_18\":87.867,\"property_19\":8.992,\"property_20\":89.029,\"property_21\":31.702,\"property_22\":88.858,\"property_23\":27.833,\"property_24\":23.726,\"property_25\":73.342,\"property_26\":66.965,\"property_27\":44.568,\"property_28\":57.926,\"property_29\":76.71,\"property_30\":61.802,\"property_31\":78.379,\"property_32\":56.453,\"property_33\":99.745,\"property_34\":20.181,\"property_35\":89.511,\"property_36\":81.254,\"property_37\":44.369,\"property_38\":59.481,\"property_39\":67.366},\"state_version\":1,\"to\":\"safe_shutdown\"},\"severity\":0.219,\"source\":\"event-simulator\",\"twin_id\":\"demo-twin-001-002\"}"
+        },
+        {
+          "proof_object": {
+            "cat": "management_action",
+            "dt": "demo-twin-001-002",
+            "dtd": 1,
+            "kid": "demo-twin-001-002/k1",
+            "pd": "e1e6a7e6fcb9bcbbbdb9bcf8c48a0d112ef1e711203f9148ff5964d9ef91de90",
+            "phase": "operation",
+            "prev": "0766fb2a66c97f2a50c310166c61663a94f54d709131ecc41b6dbfe9db3783f5",
+            "rule": "event.management.default_async",
+            "salt": "3da31abfb199be649a9d42ed1f365aee",
+            "seq": 2,
+            "sig": "d18bd550585d4657ef80d7efb4bea1efce3b5753d8b8c4ad559c494c5501a37c35ea445260fce9bd4ed01e78598a9b27ca110ed5a17fc4301e85aa5e90079c06",
+            "tst": {
+              "d": "e1e6a7e6fcb9bcbbbdb9bcf8c48a0d112ef1e711203f9148ff5964d9ef91de90",
+              "serial": 4,
+              "sig": "490e1da2ea531f0f7393a61060bc493ffd4fd32bcd37ba2474c0c36e81cd5b676510ffe009f99162603df214e0d86aae889d5bde0261cd2f5a48c2a6a4ed4700",
+              "t": 1791387701029969141,
+              "tss": "local-tss"
+            },
+            "v": 1
+          },
+          "record": "{\"event_id\":\"sim-nominal-demo-twin-001-002-00002\",\"event_type\":\"management_action\",\"lifecycle_state\":\"operation\",\"metadata\":{\"criticality\":0.268,\"dtd_version\":1,\"fidelity_score\":0.847,\"management_mode\":\"automatic\",\"management_sensitive\":false,\"scenario_name\":\"nominal\",\"state_label\":\"safe_shutdown\",\"state_version\":1},\"observed_at\":\"2026-01-01T00:00:03+00:00\",\"payload\":{\"action\":\"cache_refresh\",\"actor\":\"operator-b\",\"mode\":\"automatic\",\"parameters\":{\"target\":\"pi-1\",\"value\":81.13},\"via\":\"mni\"},\"severity\":0.268,\"source\":\"event-simulator\",\"twin_id\":\"demo-twin-001-002\"}"
+        },
+        {
+          "proof_object": {
+            "cat": "lifecycle_event",
+            "dt": "demo-twin-001-002",
+            "dtd": 1,
+            "kid": "demo-twin-001-002/k1",
+            "pd": "4c0550714dde773ad95d9b2ed6527d33cbc717acdf0e800ae9a9dc7fa976566f",
+            "phase": "synchronized",
+            "prev": "9e2f9911e9d2e596bfce4a208de28d93b7b236ba1afef1883429c06806d3ef45",
+            "rule": "event.lifecycle.sync_claim",
+            "salt": "febde3bf66afa798e1687d22548be56d",
+            "seq": 3,
+            "sig": "7f605f29cae91794ddf9db5b6b01103e914428abc721ac6e508329317fdb8ec310b617aba887355421b5d0cba727fb6abcaf2ae51db37f281c6662d022be5008",
+            "tst": {
+              "d": "4c0550714dde773ad95d9b2ed6527d33cbc717acdf0e800ae9a9dc7fa976566f",
+              "serial": 6,
+              "sig": "9afb8c2e88b920a48180b4cc3234b674cc861bd99f1094b7ae0a9cd549849b03e7bbcc9768ddc81a782330315baa204f9fb49f0a4d0b9fcd758b09c280c4af00",
+              "t": 1791387701030604976,
+              "tss": "local-tss"
+            },
+            "v": 1
+          },
+          "record": "{\"event_id\":\"sim-nominal-demo-twin-001-002-00003\",\"event_type\":\"lifecycle_event\",\"lifecycle_state\":\"synchronized\",\"metadata\":{\"claim\":\"synchronized\",\"claim_type\":\"synchronized\",\"criticality\":0.3,\"dtd_version\":1,\"fidelity_score\":0.846,\"scenario_name\":\"nominal\",\"state_label\":\"safe_shutdown\",\"state_version\":1},\"observed_at\":\"2026-01-01T00:00:05+00:00\",\"payload\":{\"claim\":\"synchronized\",\"fidelity_score\":0.846,\"metrics\":{\"entanglement\":0.159,\"missed_updates\":1,\"update_delay_ms\":184.6}},\"severity\":0.3,\"source\":\"event-simulator\",\"twin_id\":\"demo-twin-001-002\"}"
+        }
+      ],
+      "demo-twin-001": [
+        {
+          "proof_object": {
+            "cat": "dtd_update",
+            "dt": "demo-twin-001",
+            "dtd": 2,
+            "kid": "demo-twin-001/k1",
+            "pd": "ba77634c39c310c4ab9a32a7d2eaf4384b2c6665cb82f2ca556dbcf5d17c6750",
+            "phase": "operation",
+            "prev": null,
+            "rule": "event.dtd_update.sync",
+            "salt": "90bc6fc419396e5744017f9395960316",
+            "seq": 1,
+            "sig": "c61edd62d873502208e98bd9f986eee05d866e4c7233419627019d55ec991c52f9af8f2019699befedbff9d6af31b0430b4e81aa14631c67e0e2d2044a82ac08",
+            "tst": {
+              "d": "ba77634c39c310c4ab9a32a7d2eaf4384b2c6665cb82f2ca556dbcf5d17c6750",
+              "serial": 1,
+              "sig": "22bd64018fec34ec1b6d1e5a320f08e145e28464904df16c8bde31fabec3f98ccc8ef0b35864aac5b95aff83904b0ce666e2a78e23306f3f9101b67cda47e800",
+              "t": 1791387701024490811,
+              "tss": "local-tss"
+            },
+            "v": 1
+          },
+          "record": "{\"event_id\":\"sim-nominal-demo-twin-001-00001\",\"event_type\":\"dtd_update\",\"lifecycle_state\":\"operation\",\"metadata\":{\"criticality\":0.55,\"dtd_version\":2,\"fidelity_score\":0.921,\"scenario_name\":\"nominal\",\"state_label\":\"idle\",\"state_version\":0},\"observed_at\":\"2026-01-01T00:00:00+00:00\",\"payload\":{\"change\":\"schema_patch\",\"component\":\"dtd\",\"description\":{\"augmentation_functions\":[{\"af\":\"af-0\",\"model\":\"classifier\",\"version\":\"1.6\"},{\"af\":\"af-1\",\"model\":\"anomaly-detector\",\"version\":\"4.2\"},{\"af\":\"af-2\",\"model\":\"forecaster\",\"version\":\"4.2\"},{\"af\":\"af-3\",\"model\":\"forecaster\",\"version\":\"3.8\"}],\"digital_interface\":[{\"adapter\":\"di-0\",\"endpoint\":\"https://di0.local/api/v3\",\"protocol\":\"http\"},{\"adapter\":\"di-1\",\"endpoint\":\"https://di1.local/api/v3\",\"protocol\":\"mqtt\"},{\"adapter\":\"di-2\",\"endpoint\":\"https://di2.local/api/v3\",\"protocol\":\"ngsi-ld\"}],\"monitoring\":{\"metrics\":[\"latency\",\"fidelity\",\"entanglement\",\"error_rate\"],\"period_s\":30},\"physical_interface\":[{\"adapter\":\"pi-0\",\"endpoint\":\"tcp://pi0.local:1132\",\"protocol\":\"modbus\",\"sampling_ms\":250},{\"adapter\":\"pi-1\",\"endpoint\":\"tcp://pi1.local:57328\",\"protocol\":\"mqtt\",\"sampling_ms\":250},{\"adapter\":\"pi-2\",\"endpoint\":\"tcp://pi2.local:26834\",\"protocol\":\"opcua\",\"sampling_ms\":250},{\"adapter\":\"pi-3\",\"endpoint\":\"tcp://pi3.local:58190\",\"protocol\":\"coap\",\"sampling_ms\":250}],\"profile\":{\"asset_type\":\"synthetic-asset\",\"dt_id\":\"demo-twin-001\",\"owner\":\"operator-a\",\"software_version\":\"1.4.15\"},\"properties\":[{\"max\":821.0,\"min\":-0.9,\"name\":\"property_00\",\"type\":\"float\",\"unit\":\"Hz\",\"writable\":true},{\"max\":863.17,\"min\":-19.61,\"name\":\"property_01\",\"type\":\"boolean\",\"unit\":\"m/s\",\"writable\":true},{\"max\":418.69,\"min\":-3.84,\"name\":\"property_02\",\"type\":\"integer\",\"unit\":\"m/s\",\"writable\":false},{\"max\":765.5,\"min\":-32.68,\"name\":\"property_03\",\"type\":\"integer\",\"unit\":\"degC\",\"writable\":true},{\"max\":684.91,\"min\":-57.06,\"name\":\"property_04\",\"type\":\"float\",\"unit\":\"Hz\",\"writable\":false},{\"max\":369.74,\"min\":-26.42,\"name\":\"property_05\",\"type\":\"float\",\"unit\":\"V\",\"writable\":true},{\"max\":195.42,\"min\":-86.63,\"name\":\"property_06\",\"type\":\"boolean\",\"unit\":\"V\",\"writable\":false},{\"max\":291.7,\"min\":-7.82,\"name\":\"property_07\",\"type\":\"integer\",\"unit\":\"degC\",\"writable\":false},{\"max\":871.66,\"min\":-93.5,\"name\":\"property_08\",\"type\":\"integer\",\"unit\":\"A\",\"writable\":true},{\"max\":74.31,\"min\":-14.63,\"name\":\"property_09\",\"type\":\"integer\",\"unit\":\"W\",\"writable\":false},{\"max\":558.21,\"min\":-59.95,\"name\":\"property_10\",\"type\":\"string\",\"unit\":\"m/s\",\"writable\":true},{\"max\":166.94,\"min\":-81.98,\"name\":\"property_11\",\"type\":\"string\",\"unit\":\"W\",\"writable\":false},{\"max\":822.66,\"min\":-39.93,\"name\":\"property_12\",\"type\":\"float\",\"unit\":\"V\",\"writable\":false},{\"max\":924.55,\"min\":-65.88,\"name\":\"property_13\",\"type\":\"boolean\",\"unit\":\"%\",\"writable\":false},{\"max\":371.0,\"min\":-21.6,\"name\":\"property_14\",\"type\":\"string\",\"unit\":\"m/s\",\"writable\":false},{\"max\":238.7,\"min\":-19.21,\"name\":\"property_15\",\"type\":\"string\",\"unit\":\"m/s\",\"writable\":false},{\"max\":209.92,\"min\":-54.54,\"name\":\"property_16\",\"type\":\"float\",\"unit\":\"W\",\"writable\":true},{\"max\":880.78,\"min\":-27.54,\"name\":\"property_17\",\"type\":\"float\",\"unit\":\"\",\"writable\":false},{\"max\":788.89,\"min\":-47.13,\"name\":\"property_18\",\"type\":\"boolean\",\"unit\":\"%\",\"writable\":false},{\"max\":2.64,\"min\":-80.84,\"name\":\"property_19\",\"type\":\"boolean\",\"unit\":\"A\",\"writable\":false},{\"max\":799.97,\"min\":-55.2,\"name\":\"property_20\",\"type\":\"boolean\",\"unit\":\"\",\"writable\":true},{\"max\":943.9,\"min\":-63.39,\"name\":\"property_21\",\"type\":\"boolean\",\"unit\":\"V\",\"writable\":false},{\"max\":953.36,\"min\":-17.09,\"name\":\"property_22\",\"type\":\"boolean\",\"unit\":\"%\",\"writable\":false},{\"max\":582.49,\"min\":-16.97,\"name\":\"property_23\",\"type\":\"float\",\"unit\":\"%\",\"writable\":true},{\"max\":454.0,\"min\":-32.34,\"name\":\"property_24\",\"type\":\"integer\",\"unit\":\"Hz\",\"writable\":true},{\"max\":59.7,\"min\":-0.55,\"name\":\"property_25\",\"type\":\"integer\",\"unit\":\"Hz\",\"writable\":false},{\"max\":405.88,\"min\":-62.89,\"name\":\"property_26\",\"type\":\"boolean\",\"unit\":\"Hz\",\"writable\":false},{\"max\":850.98,\"min\":-25.55,\"name\":\"property_27\",\"type\":\"boolean\",\"unit\":\"%\",\"writable\":true},{\"max\":290.88,\"min\":-96.55,\"name\":\"property_28\",\"type\":\"float\",\"unit\":\"%\",\"writable\":false},{\"max\":442.35,\"min\":-21.21,\"name\":\"property_29\",\"type\":\"float\",\"unit\":\"A\",\"writable\":false},{\"max\":537.7,\"min\":-43.4,\"name\":\"property_30\",\"type\":\"float\",\"unit\":\"\",\"writable\":false},{\"max\":588.15,\"min\":-73.92,\"name\":\"property_31\",\"type\":\"string\",\"unit\":\"Hz\",\"writable\":false},{\"max\":327.74,\"min\":-25.19,\"name\":\"property_32\",\"type\":\"integer\",\"unit\":\"%\",\"writable\":false},{\"max\":527.3,\"min\":-62.55,\"name\":\"property_33\",\"type\":\"float\",\"unit\":\"A\",\"writable\":false},{\"max\":403.88,\"min\":-80.41,\"name\":\"property_34\",\"type\":\"integer\",\"unit\":\"degC\",\"writable\":false},{\"max\":45.15,\"min\":-2.17,\"name\":\"property_35\",\"type\":\"integer\",\"unit\":\"degC\",\"writable\":false},{\"max\":908.49,\"min\":-0.95,\"name\":\"property_36\",\"type\":\"float\",\"unit\":\"degC\",\"writable\":true},{\"max\":905.16,\"min\":-35.42,\"name\":\"property_37\",\"type\":\"string\",\"unit\":\"\",\"writable\":false},{\"max\":397.1,\"min\":-72.68,\"name\":\"property_38\",\"type\":\"string\",\"unit\":\"Hz\",\"writable\":false},{\"max\":790.69,\"min\":-4.4,\"name\":\"property_39\",\"type\":\"string\",\"unit\":\"W\",\"writable\":true}],\"security\":{\"authentication\":\"mutual-tls\",\"authorization\":\"role-based\",\"roles\":[\"operator\",\"auditor\",\"application\"]}},\"version\":\"dtd-v2\"},\"severity\":0.55,\"source\":\"event-simulator\",\"twin_id\":\"demo-twin-001\"}"
+        },
+        {
+          "proof_object": {
+            "cat": "dtd_update",
+            "dt": "demo-twin-001",
+            "dtd": 3,
+            "kid": "demo-twin-001/k1",
+            "pd": "0042a406c14d99eb913c339057f666871a8ed293b12ed372d2f7845d49225291",
+            "phase": "operation",
+            "prev": "58455443f8fd46532d5ca90c81f6e0bfd7ba8c895fd85678c3a5e6add568988d",
+            "rule": "event.dtd_update.sync",
+            "salt": "f3b6b0ed5c6a7ee64f321743f2bcdf41",
+            "seq": 2,
+            "sig": "8a325b5a19685771bddbaf2d93abcc20657d24a168fefba1a09649b1aaf25320ad0af64c64bf0a2224d3965ae1e834682acd95c5764619ab387eef70f8a26405",
+            "tst": {
+              "d": "0042a406c14d99eb913c339057f666871a8ed293b12ed372d2f7845d49225291",
+              "serial": 3,
+              "sig": "815cc2411e9d43e13b7f743488e38852e46b935ddeb0ad16170fa01f3f3b7bf8d306442a4bc28c1b3e9597792ad3735a84fce1005b8353985055053a4090600e",
+              "t": 1791387701028352831,
+              "tss": "local-tss"
+            },
+            "v": 1
+          },
+          "record": "{\"event_id\":\"sim-nominal-demo-twin-001-00002\",\"event_type\":\"dtd_update\",\"lifecycle_state\":\"operation\",\"metadata\":{\"criticality\":0.55,\"dtd_version\":3,\"fidelity_score\":0.919,\"scenario_name\":\"nominal\",\"state_label\":\"idle\",\"state_version\":0},\"observed_at\":\"2026-01-01T00:00:02+00:00\",\"payload\":{\"change\":\"interface_revision\",\"component\":\"dtd\",\"description\":{\"augmentation_functions\":[{\"af\":\"af-0\",\"model\":\"forecaster\",\"version\":\"4.8\"},{\"af\":\"af-1\",\"model\":\"anomaly-detector\",\"version\":\"4.7\"},{\"af\":\"af-2\",\"model\":\"anomaly-detector\",\"version\":\"3.6\"},{\"af\":\"af-3\",\"model\":\"forecaster\",\"version\":\"2.0\"}],\"digital_interface\":[{\"adapter\":\"di-0\",\"endpoint\":\"https://di0.local/api/v2\",\"protocol\":\"mqtt\"},{\"adapter\":\"di-1\",\"endpoint\":\"https://di1.local/api/v1\",\"protocol\":\"mqtt\"},{\"adapter\":\"di-2\",\"endpoint\":\"https://di2.local/api/v3\",\"protocol\":\"http\"}],\"monitoring\":{\"metrics\":[\"latency\",\"fidelity\",\"entanglement\",\"error_rate\"],\"period_s\":10},\"physical_interface\":[{\"adapter\":\"pi-0\",\"endpoint\":\"tcp://pi0.local:7187\",\"protocol\":\"modbus\",\"sampling_ms\":100},{\"adapter\":\"pi-1\",\"endpoint\":\"tcp://pi1.local:43707\",\"protocol\":\"modbus\",\"sampling_ms\":250},{\"adapter\":\"pi-2\",\"endpoint\":\"tcp://pi2.local:62426\",\"protocol\":\"modbus\",\"sampling_ms\":500},{\"adapter\":\"pi-3\",\"endpoint\":\"tcp://pi3.local:39089\",\"protocol\":\"coap\",\"sampling_ms\":1000}],\"profile\":{\"asset_type\":\"synthetic-asset\",\"dt_id\":\"demo-twin-001\",\"owner\":\"operator-a\",\"software_version\":\"3.2.16\"},\"properties\":[{\"max\":35.16,\"min\":-4.72,\"name\":\"property_00\",\"type\":\"float\",\"unit\":\"V\",\"writable\":false},{\"max\":524.21,\"min\":-54.84,\"name\":\"property_01\",\"type\":\"integer\",\"unit\":\"W\",\"writable\":true},{\"max\":749.33,\"min\":-0.66,\"name\":\"property_02\",\"type\":\"integer\",\"unit\":\"V\",\"writable\":false},{\"max\":233.17,\"min\":-52.37,\"name\":\"property_03\",\"type\":\"integer\",\"unit\":\"V\",\"writable\":false},{\"max\":926.82,\"min\":-35.94,\"name\":\"property_04\",\"type\":\"boolean\",\"unit\":\"W\",\"writable\":false},{\"max\":48.52,\"min\":-93.99,\"name\":\"property_05\",\"type\":\"boolean\",\"unit\":\"%\",\"writable\":false},{\"max\":58.01,\"min\":-25.26,\"name\":\"property_06\",\"type\":\"string\",\"unit\":\"Hz\",\"writable\":false},{\"max\":51.02,\"min\":-22.88,\"name\":\"property_07\",\"type\":\"integer\",\"unit\":\"Hz\",\"writable\":false},{\"max\":678.63,\"min\":-27.51,\"name\":\"property_08\",\"type\":\"boolean\",\"unit\":\"Hz\",\"writable\":false},{\"max\":322.94,\"min\":-39.83,\"name\":\"property_09\",\"type\":\"string\",\"unit\":\"m/s\",\"writable\":false},{\"max\":758.64,\"min\":-0.75,\"name\":\"property_10\",\"type\":\"string\",\"unit\":\"Hz\",\"writable\":false},{\"max\":696.16,\"min\":-20.81,\"name\":\"property_11\",\"type\":\"boolean\",\"unit\":\"W\",\"writable\":false},{\"max\":95.18,\"min\":-55.46,\"name\":\"property_12\",\"type\":\"string\",\"unit\":\"m/s\",\"writable\":false},{\"max\":881.95,\"min\":-48.98,\"name\":\"property_13\",\"type\":\"string\",\"unit\":\"m/s\",\"writable\":false},{\"max\":308.56,\"min\":-57.0,\"name\":\"property_14\",\"type\":\"string\",\"unit\":\"V\",\"writable\":false},{\"max\":838.36,\"min\":-62.14,\"name\":\"property_15\",\"type\":\"integer\",\"unit\":\"%\",\"writable\":false},{\"max\":531.95,\"min\":-18.86,\"name\":\"property_16\",\"type\":\"float\",\"unit\":\"degC\",\"writable\":true},{\"max\":817.18,\"min\":-87.42,\"name\":\"property_17\",\"type\":\"integer\",\"unit\":\"m/s\",\"writable\":false},{\"max\":298.54,\"min\":-29.42,\"name\":\"property_18\",\"type\":\"float\",\"unit\":\"Hz\",\"writable\":false},{\"max\":296.5,\"min\":-86.71,\"name\":\"property_19\",\"type\":\"string\",\"unit\":\"%\",\"writable\":false},{\"max\":945.81,\"min\":-63.47,\"name\":\"property_20\",\"type\":\"boolean\",\"unit\":\"A\",\"writable\":false},{\"max\":892.6,\"min\":-99.12,\"name\":\"property_21\",\"type\":\"float\",\"unit\":\"V\",\"writable\":true},{\"max\":413.2,\"min\":-15.84,\"name\":\"property_22\",\"type\":\"integer\",\"unit\":\"degC\",\"writable\":false},{\"max\":843.22,\"min\":-25.17,\"name\":\"property_23\",\"type\":\"boolean\",\"unit\":\"A\",\"writable\":false},{\"max\":586.85,\"min\":-29.92,\"name\":\"property_24\",\"type\":\"float\",\"unit\":\"m/s\",\"writable\":true},{\"max\":58.96,\"min\":-56.92,\"name\":\"property_25\",\"type\":\"integer\",\"unit\":\"m/s\",\"writable\":false},{\"max\":189.09,\"min\":-74.7,\"name\":\"property_26\",\"type\":\"float\",\"unit\":\"A\",\"writable\":false},{\"max\":324.28,\"min\":-33.37,\"name\":\"property_27\",\"type\":\"float\",\"unit\":\"A\",\"writable\":false},{\"max\":606.03,\"min\":-7.39,\"name\":\"property_28\",\"type\":\"integer\",\"unit\":\"\",\"writable\":true},{\"max\":609.51,\"min\":-99.18,\"name\":\"property_29\",\"type\":\"integer\",\"unit\":\"\",\"writable\":false},{\"max\":723.77,\"min\":-39.5,\"name\":\"property_30\",\"type\":\"string\",\"unit\":\"Hz\",\"writable\":false},{\"max\":307.85,\"min\":-21.26,\"name\":\"property_31\",\"type\":\"integer\",\"unit\":\"\",\"writable\":false},{\"max\":636.36,\"min\":-95.01,\"name\":\"property_32\",\"type\":\"boolean\",\"unit\":\"%\",\"writable\":false},{\"max\":923.25,\"min\":-60.54,\"name\":\"property_33\",\"type\":\"boolean\",\"unit\":\"\",\"writable\":false},{\"max\":657.18,\"min\":-99.05,\"name\":\"property_34\",\"type\":\"float\",\"unit\":\"%\",\"writable\":false},{\"max\":554.19,\"min\":-78.74,\"name\":\"property_35\",\"type\":\"integer\",\"unit\":\"A\",\"writable\":false},{\"max\":943.0,\"min\":-43.94,\"name\":\"property_36\",\"type\":\"string\",\"unit\":\"degC\",\"writable\":false},{\"max\":588.19,\"min\":-34.71,\"name\":\"property_37\",\"type\":\"string\",\"unit\":\"A\",\"writable\":false},{\"max\":473.14,\"min\":-63.91,\"name\":\"property_38\",\"type\":\"float\",\"unit\":\"V\",\"writable\":false},{\"max\":7.6,\"min\":-25.71,\"name\":\"property_39\",\"type\":\"integer\",\"unit\":\"Hz\",\"writable\":false}],\"security\":{\"authentication\":\"mutual-tls\",\"authorization\":\"role-based\",\"roles\":[\"operator\",\"auditor\",\"application\"]}},\"version\":\"dtd-v3\"},\"severity\":0.55,\"source\":\"event-simulator\",\"twin_id\":\"demo-twin-001\"}"
+        },
+        {
+          "proof_object": {
+            "cat": "af_validated_output",
+            "dt": "demo-twin-001",
+            "dtd": 3,
+            "kid": "demo-twin-001/k1",
+            "pd": "41e70d49c345f8ae037ad226e4be1a7ce2c05d1d5e07588e7d5ca1f3af01cc5b",
+            "phase": "operation",
+            "prev": "da5072661204e0e2005a6a9241a4db0e50b558cfc3db1b93f1a93a1d9269762d",
+            "rule": "event.af_output.default_async",
+            "salt": "1e12cee78947c8e7b1fef4646f1bd3ba",
+            "seq": 3,
+            "sig": "7c64bf9776bf168f656e5f085b6b48bbb66549c925552a28404c684615ddaaaa119ac64c15bb8b479806343dbb4ed06ccc43c817815462d9182ca04b1ec0d408",
+            "tst": {
+              "d": "41e70d49c345f8ae037ad226e4be1a7ce2c05d1d5e07588e7d5ca1f3af01cc5b",
+              "serial": 5,
+              "sig": "40645d6cdeb4301b8eff97ca14a039bcb2af899f73d497e4809f988ec9db4c440af9574617446440f2469fcd3d23dc944068a403d4e68e4ecfd95842732e4507",
+              "t": 1791387701030315306,
+              "tss": "local-tss"
+            },
+            "v": 1
+          },
+          "record": "{\"event_id\":\"sim-nominal-demo-twin-001-00003\",\"event_type\":\"af_validated_output\",\"lifecycle_state\":\"operation\",\"metadata\":{\"af_confidence\":0.938,\"af_risk_level\":\"low\",\"af_score\":0.066,\"criticality\":0.053,\"dtd_version\":3,\"fidelity_score\":0.92,\"scenario_name\":\"nominal\",\"state_label\":\"idle\",\"state_version\":0},\"observed_at\":\"2026-01-01T00:00:04+00:00\",\"payload\":{\"af\":\"af-0\",\"af_score\":0.066,\"confidence\":0.938,\"inputs\":{\"features\":[-0.6472,-0.846,-0.085,-0.2144,-0.8594,-0.3617,-0.2029,0.0025,0.4466,-0.8516,0.0526,-0.2666],\"window_s\":60},\"model_version\":\"2.0\",\"prediction\":\"nominal\",\"validation\":{\"outcome\":\"validated\",\"validator\":\"dtm\"}},\"severity\":0.053,\"source\":\"event-simulator\",\"twin_id\":\"demo-twin-001\"}"
+        }
+      ]
+    },
+    "anchors": [
+      "{\"c\":\"58455443f8fd46532d5ca90c81f6e0bfd7ba8c895fd85678c3a5e6add568988d\",\"dt\":\"demo-twin-001\",\"seq\":1}",
+      "{\"c\":\"0766fb2a66c97f2a50c310166c61663a94f54d709131ecc41b6dbfe9db3783f5\",\"dt\":\"demo-twin-001-002\",\"seq\":1}",
+      "{\"c\":\"da5072661204e0e2005a6a9241a4db0e50b558cfc3db1b93f1a93a1d9269762d\",\"dt\":\"demo-twin-001\",\"seq\":2}",
+      "{\"c\":\"9e2f9911e9d2e596bfce4a208de28d93b7b236ba1afef1883429c06806d3ef45\",\"dt\":\"demo-twin-001-002\",\"seq\":2}",
+      "{\"c\":\"83056442d13db1f3c78e3ca9500bd2b056c3ad9ace7af20458fd02ac9da9e7b9\",\"dt\":\"demo-twin-001\",\"seq\":3}",
+      "{\"c\":\"8945639e74e32434cd7c427e166da68b9f762f87b3c06490fcf8dd9042380f11\",\"dt\":\"demo-twin-001-002\",\"seq\":3}"
+    ],
+    "heads": [
+      {
+        "size": 1,
+        "root": "55a2d3ee2b87a5e5365b7bb0fe0873b0c8eda40a24faa8c236bee7955936e2e3",
+        "signatures": {
+          "member-1": "cace5c61fa1f325f91c4632d5d39eb31fd86ee9d4578576ad140a83723bafb7cb9e5bb5d5d7cec7dbf8022121480b4ebc4d5e696ca933b7b52f3bf154046fd0c",
+          "member-2": "5b4066625253b8266b15c47fd2a91cdab5f9863bfb09e7d60bd17d50178d922b867cdb13aff8c15424abbf4adb68e51380bb4f875de8505067b5b57e92e6ea07",
+          "member-3": "1ea1a718fe93faf6a350e30f9ea5cc3a33e9f093d7aad300499fb2e5a068dded4bdd86d00c24bde1106a16af06888638d32ea8fe6f68a96ae942bf097a834404",
+          "member-4": "5b732cb143b1aff2c30e14d97bf091f511bd11e5e9d3a5f7cd5d2bf3cb0476c4c6f5268f6d904de4c9148b780074df8f6b8454f185e32332afcfcde8706ab30a"
+        }
+      },
+      {
+        "size": 2,
+        "root": "d142f7af1a6c40aac034511fe5ebdba9c1358b9a2f5b0d50fdc3bc98abadb213",
+        "signatures": {
+          "member-1": "e447a99e8bb21ade66e1c9213f546b3387043eda647ed3a06801fb3e1eeb1eaa415742f90c013e0df08787df384dffbccc38325b620be63588914e8959c9970f",
+          "member-2": "2608ada947f72b6fbb6658f108069557f8d227c6feeb67393ff05b242950751a16d3d1e63d4a64237ef34261afd906335654808edc2c0f768687d97fdb9a2607",
+          "member-3": "4f207f7cbdec61e06f1683a80945ada27ec18e21a0c5ca1062c9a1c34ba399864892b686c89bc2bf7b01f0d551a80aef533fbacdb95436228a235edeabffa809",
+          "member-4": "459b4864b4913d5d934990db0042afd7feb637722317634237e311b3cbaa9f7db7cd78ffdbccdd3362a78ecd6665e8eb3a7f395d65ab5fe3bdc33ebc55c6370e"
+        }
+      },
+      {
+        "size": 3,
+        "root": "2e50fa07d14b34a7b3f1cbfcbfd79cdbab9046706e847901d9911232dac8177a",
+        "signatures": {
+          "member-1": "02a274e2b5d0919f122b96c176a94b7c772c5f6eeec6df661e281b7cc2ceb47c390f011f2c992f216d32cbb444b3533f1d5f6f124553787ca4c18756f44d2f0a",
+          "member-2": "5111e2a817f056e67fe07962f911b9c01827351cced1f55b8b9f9333a20eb0f93549aa3fa234ad4a60c61f36372009d436571488451b7a4828cb2e7a9931b007",
+          "member-3": "575faa3184ae900cc0e97ebd40e374ecb9efe519ef43fc6bda8ec5c4767bd249e06f218f63d1b43b3431f62683c5685f81cec6de6c5f21da82f95f3a15d83201",
+          "member-4": "1c3500f1cecd25591402b23e754b279b63862b2dd99ba71041ff7c73e6ca600d984df7caafbddfbea878d1949c88035541e47f5b0614c6d0daf0b619e1ebc404"
+        }
+      },
+      {
+        "size": 6,
+        "root": "6ac9ad77ad6ad76209bad89469822ea92291bc400b7b414f459f785be1608cd6",
+        "signatures": {
+          "member-1": "fd31dc4dda493c4a228c132d531906b2ed2f61509353718e2d23d7b65ad4571affb9f6619c6f7f8000b99944300e01b88cd8cb2682ca73320c00d5626fce9f04",
+          "member-2": "a71c32cead76a42c7022c1aaa83773f590ace2b29ef37754e037cacf4e637028e6c1fd06fcb30b3f071365ad79ddbcae73a1a23d8b96f2295b69a19b15563506",
+          "member-3": "162d8e1042d47fffa89e7fa5ac3dd636feecd871b9debc7ffe0fb45ff6d5978748040bb22edcfa4c412d1fcfd586d2a8f76e6c4b09bfef68b7630f9ff60e8b0a",
+          "member-4": "906b893aa1e7b7a69b1a03b3f1fdc0472b24a51112b4f703f42079284f6baebd913461fb796fc5f11f8c9c19dceb1abd1faed372617280835287fbc9a1739a02"
+        }
+      }
+    ],
+    "receipts": [
+      {
+        "dt": "demo-twin-001",
+        "seq": 1,
+        "index": 0,
+        "size": 1,
+        "path": []
+      },
+      {
+        "dt": "demo-twin-001",
+        "seq": 2,
+        "index": 2,
+        "size": 3,
+        "path": [
+          "d142f7af1a6c40aac034511fe5ebdba9c1358b9a2f5b0d50fdc3bc98abadb213"
+        ]
+      },
+      {
+        "dt": "demo-twin-001",
+        "seq": 3,
+        "index": 4,
+        "size": 6,
+        "path": [
+          "f99a0d1b1d2ac773e15d5e0969e9bee5a63e13d276fa39013dcc2c9b32147425",
+          "86b83f1155abea1861e5609a9c8da819545f08df4f52cb48d7965168a20888f9"
+        ]
+      },
+      {
+        "dt": "demo-twin-001-002",
+        "seq": 1,
+        "index": 1,
+        "size": 2,
+        "path": [
+          "55a2d3ee2b87a5e5365b7bb0fe0873b0c8eda40a24faa8c236bee7955936e2e3"
+        ]
+      },
+      {
+        "dt": "demo-twin-001-002",
+        "seq": 2,
+        "index": 3,
+        "size": 6,
+        "path": [
+          "37f637322e2fd3f43dfe888050944c75c73c4839b73f2f025451303dcc3c7ce0",
+          "d142f7af1a6c40aac034511fe5ebdba9c1358b9a2f5b0d50fdc3bc98abadb213",
+          "598a70939271252f798bb670e11a9874272dae085839ac2b1ccdc239c2cadf65"
+        ]
+      },
+      {
+        "dt": "demo-twin-001-002",
+        "seq": 3,
+        "index": 5,
+        "size": 6,
+        "path": [
+          "251d73c50c8422c9e4551a3dd2e9cc277f8bc7dc9352ab205db80999794a4a32",
+          "86b83f1155abea1861e5609a9c8da819545f08df4f52cb48d7965168a20888f9"
+        ]
+      }
+    ],
+    "sealed_size": 6
+  },
+  "expected": {
+    "objects": 6,
+    "all_anchored": true,
+    "failed_checks": [],
+    "commitments": {
+      "demo-twin-001-002:1": "0766fb2a66c97f2a50c310166c61663a94f54d709131ecc41b6dbfe9db3783f5",
+      "demo-twin-001-002:2": "9e2f9911e9d2e596bfce4a208de28d93b7b236ba1afef1883429c06806d3ef45",
+      "demo-twin-001-002:3": "8945639e74e32434cd7c427e166da68b9f762f87b3c06490fcf8dd9042380f11",
+      "demo-twin-001:1": "58455443f8fd46532d5ca90c81f6e0bfd7ba8c895fd85678c3a5e6add568988d",
+      "demo-twin-001:2": "da5072661204e0e2005a6a9241a4db0e50b558cfc3db1b93f1a93a1d9269762d",
+      "demo-twin-001:3": "83056442d13db1f3c78e3ca9500bd2b056c3ad9ace7af20458fd02ac9da9e7b9"
+    }
+  }
+}

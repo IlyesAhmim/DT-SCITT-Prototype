@@ -1,0 +1,10 @@
+fault,cases,detected,target_check,target_check_fired,check_sets
+deletion,250,250,iv,250,iv:1; iv+v:202; iv+v+vi:47
+dtd_misbinding,200,200,vi,200,vi:200
+object_alteration,250,250,i,250,i+iv+v+vi:250
+record_alteration,250,250,iii,250,iii:250
+reorder,250,250,iv,250,ii+iv+v:186; ii+iv+v+vi:64
+replay,250,250,iv,250,ii+iv:2; ii+iv+vi:248
+revoked_key,250,250,i,250,i+v:250
+rewrite_resign,250,250,v,250,v:250
+truncation,250,250,iv,250,iv:250
