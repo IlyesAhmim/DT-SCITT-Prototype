@@ -1,0 +1,11 @@
+Alter a stored record without the signing key                          chain:200/200  scitt:200/200  profile:200/200
+Delete a record inside the disclosed history                           chain:200/200  scitt:200/200  profile:200/200
+Backdate a record with a key compromised after revocation              chain:0/200  scitt:200/200  profile:200/200
+Operator re-signs an anchored record and re-chains the suffix          chain:0/200  scitt:0/200  profile:200/200
+Withhold the latest records                                            chain:0/200  scitt:0/200  profile:200/200
+Declare a DTD version other than the recorded one                      chain:0/200  scitt:0/200  profile:200/200
+Registry forks its log, one witness colludes                           chain:0/0  scitt:200/200  profile:200/200
+Registry forks its log, two witnesses collude                          chain:0/0  scitt:0/200  profile:0/200
+Replace a released record before it is anchored                        chain:0/200  scitt:0/200  profile:0/200
+Never record an event                                                  chain:0/200  scitt:0/200  profile:0/200
+Sign a false reading at recording time                                 chain:0/200  scitt:0/200  profile:0/200

@@ -1,0 +1,9 @@
+RTT   1 ms  sync median 5.2  p99 6.3  | async exposure p99 tau=0.1s: 102  tau=1s: 997  tau=10s: 9942
+RTT   2 ms  sync median 7.4  p99 9.6  | async exposure p99 tau=0.1s: 104  tau=1s: 999  tau=10s: 9943
+RTT   5 ms  sync median 13.7  p99 19.1  | async exposure p99 tau=0.1s: 111  tau=1s: 1005  tau=10s: 9950
+RTT  10 ms  sync median 24.3  p99 35.3  | async exposure p99 tau=0.1s: 123  tau=1s: 1015  tau=10s: 9972
+RTT  20 ms  sync median 45.6  p99 68.2  | async exposure p99 tau=0.1s: 148  tau=1s: 1038  tau=10s: 9989
+RTT  50 ms  sync median 109.2  p99 164.1  | async exposure p99 tau=0.1s: 228  tau=1s: 1105  tau=10s: 10038
+RTT 100 ms  sync median 214.8  p99 322.9  | async exposure p99 tau=0.1s: 366  tau=1s: 1223  tau=10s: 10152
+RTT 200 ms  sync median 428.0  p99 653.6  | async exposure p99 tau=0.1s: 654  tau=1s: 1478  tau=10s: 10365
+count-only B=64 exposure p99 (s): {10.0: 8.3, 1.0: 83.0, 0.1: 829.3}

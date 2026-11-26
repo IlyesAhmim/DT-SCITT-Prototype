@@ -1,0 +1,83 @@
+{
+ "environment": {
+  "python": "3.13.17",
+  "cpu": "Intel(R) Xeon(R) Processor",
+  "cores": 2,
+  "cryptography": "50.0.1",
+  "cbor2": "6.1.5"
+ },
+ "produce": {
+  "median_ms": 0.06709650006087031,
+  "p99_ms": 0.11143200026708655,
+  "n": 2000,
+  "throughput_per_s": 14903.907045714672
+ },
+ "timestamp": {
+  "median_ms": 0.03455100022620172,
+  "p99_ms": 0.06030099984855042,
+  "n": 2000
+ },
+ "register": {
+  "median_ms": 0.09715099986351561,
+  "p99_ms": 0.12017300014122156,
+  "n": 2001,
+  "throughput_per_s": 10293.2548445705
+ },
+ "checkpoint": {
+  "1": {
+   "median_ms": 0.9251520000361779,
+   "p99_ms": 0.988476000202354,
+   "n": 30,
+   "per_record_ms": 0.9251520000361779
+  },
+  "8": {
+   "median_ms": 3.694473999985348,
+   "p99_ms": 4.006576999927347,
+   "n": 30,
+   "per_record_ms": 0.4618092499981685
+  },
+  "64": {
+   "median_ms": 25.994609499775834,
+   "p99_ms": 37.13860299967564,
+   "n": 30,
+   "per_record_ms": 0.4061657734339974
+  }
+ },
+ "receipt": {
+  "median_ms": 0.05549749994315789,
+  "p99_ms": 0.09080300014829845,
+  "n": 2000
+ },
+ "verify_history": {
+  "records": 2001,
+  "outcome": "verified",
+  "total_ms": 670.3789900002448,
+  "per_record_ms": 0.33502198400811833
+ },
+ "verify_record": {
+  "median_ms": 1.9798055000137538,
+  "p99_ms": 2.9482539998753055,
+  "n": 500,
+  "note": "two-record history: signatures, digests, time-stamps, receipts, checkpoints, head proof",
+  "throughput_per_s": 505.1001222054656
+ },
+ "sizes_bytes": {
+  "body_jcs": 411,
+  "statement": 238,
+  "timestamp_token": 128,
+  "receipt_at_size": {
+   "1024": 441,
+   "1048576": 785
+  },
+  "checkpoint": 445,
+  "head_proof": null,
+  "head_proof_1_dt": 60,
+  "per_record_stored": 1562
+ },
+ "sync_pipeline_local": {
+  "median_ms": 1.20782649969442,
+  "p99_ms": 1.3263249998090032,
+  "n": 300,
+  "note": "produce + time-stamp + register + checkpoint (4 witnesses), no network"
+ }
+}

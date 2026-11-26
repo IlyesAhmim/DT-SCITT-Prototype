@@ -1,0 +1,14 @@
+{
+  "name": "dt-evidence-1-js-verifier",
+  "version": "1.0.0",
+  "description": "Independent verifier for the dt-evidence-1 test vectors (JCS via canonicalize, CBOR via cbor-x, Ed25519 and SHA-256 via node:crypto)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "verify": "node verify.mjs ../testvectors/dt-evidence-1-vectors.json"
+  },
+  "dependencies": {
+    "canonicalize": "2.1.0",
+    "cbor-x": "1.6.0"
+  }
+}

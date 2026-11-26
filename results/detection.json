@@ -1,0 +1,295 @@
+{
+ "alter_stored": {
+  "label": "Alter a stored record without the signing key",
+  "chain": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  }
+ },
+ "delete_middle": {
+  "label": "Delete a record inside the disclosed history",
+  "chain": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  }
+ },
+ "backdate": {
+  "label": "Backdate a record with a key compromised after revocation",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 200,
+   "outcomes": {
+    "pending": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 200,
+   "outcomes": {
+    "invalid": 200
+   }
+  }
+ },
+ "rewrite": {
+  "label": "Operator re-signs an anchored record and re-chains the suffix",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 200,
+   "outcomes": {
+    "invalid": 200
+   }
+  }
+ },
+ "truncate": {
+  "label": "Withhold the latest records",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  }
+ },
+ "dtd_misbinding": {
+  "label": "Declare a DTD version other than the recorded one",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "invalid": 200
+   }
+  }
+ },
+ "split_view": {
+  "label": "Registry forks its log, one witness colludes",
+  "chain": {
+   "trials": 0,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {}
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "pending": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 200,
+   "refused": 0,
+   "outcomes": {
+    "pending": 200
+   }
+  }
+ },
+ "split_view_two": {
+  "label": "Registry forks its log, two witnesses collude",
+  "chain": {
+   "trials": 0,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {}
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  }
+ },
+ "pending_rewrite": {
+  "label": "Replace a released record before it is anchored",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  }
+ },
+ "omitted": {
+  "label": "Never record an event",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  }
+ },
+ "false_reading": {
+  "label": "Sign a false reading at recording time",
+  "chain": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "scitt": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  },
+  "profile": {
+   "trials": 200,
+   "exposed": 0,
+   "refused": 0,
+   "outcomes": {
+    "verified": 200
+   }
+  }
+ }
+}
